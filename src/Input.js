@@ -54,6 +54,7 @@ const Container = styled.section`
     align-items: center;
     width: ${({fullWidth}) => fullWidth ? "" : "fit-content" };
     flex-direction: ${({startIcon}) => startIcon ? "row-reverse" : "row"};
+    transition: border 0.5s ease-in-out;
     padding: ${({size}) => (
     (size === "sm" && themes.sizes.sm) ||
     (size === "md" && themes.sizes.md) ||
